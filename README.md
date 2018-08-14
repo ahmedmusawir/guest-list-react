@@ -5,6 +5,6 @@ A simple event based app with Moose React Starter kit (SCSS included)
 
 * Click event
 * Key Down event
-* React Animation
+* React Animation w/ Animate.css
 * SCSS
 * Input (text)
