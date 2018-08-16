@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Guests from './components/Guests';
+import Todos from './components/Todos';
 
 class App extends Component {
   render() {
@@ -9,12 +9,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">The Guest List</h1>
+          <h1 className="App-title">Today's To Do-s</h1>
         </header>
         <p className="App-intro pt-3">
-          Insert or Delete Guests using the following form
+          Use this as a quick temp to do list for the Day or Hour ...
         </p>
-        <Guests />
+        <Todos />
       </div>
     );
   }

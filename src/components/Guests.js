@@ -4,7 +4,11 @@ class Guests extends Component {
   constructor() {
     super(...arguments);
     this.state = {
-      guests: [{ name: 'React' }, { name: 'VueJS' }]
+      guests: [
+        { name: 'Learn React Components' },
+        { name: 'Learn React Routing' }
+        // { name: 'Learn React State Management' }
+      ]
     };
   }
 
@@ -27,6 +31,7 @@ class Guests extends Component {
   render() {
     let guests = this.state.guests.map((guest, i) => (
       <li className="list-group-item animated bounceInLeft" key={i}>
+        <h5 className="badge badge-info float-left">Estimated Time: 30min</h5>
         {guest.name}
         <button
           className="float-right"
@@ -41,7 +46,7 @@ class Guests extends Component {
         <input
           className="form-control"
           type="text"
-          placeholder="Invite Someone"
+          placeholder="What needs to be done on this Project? "
           value={this.state.newName}
           onKeyDown={this.handleChange.bind(this)}
         />
